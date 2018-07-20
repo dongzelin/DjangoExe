@@ -1,4 +1,8 @@
 
+body {
+    background: url("../img/background.png");
+}
+
 /* -- padding -- */
 
 .m-padding-tb-mini {
@@ -40,6 +44,11 @@
 
 .m-padding-tiny {
     padding: 0.3em !important;
+}
+
+.m-padding-lr {
+    padding-left: 4em !important;
+    padding-right: 4em !important;
 }
 
 /*-- margin --*/
@@ -103,6 +112,10 @@ m-margin-bottom-huge {
     opacity: 0.8 !important;
 }
 
+.m-opacity-tiny {
+    opacity: 0.6 !important;
+}
+
 /*-- display --*/
 .m-inline-block {
     display: inline-block !important;
@@ -112,6 +125,11 @@ m-margin-bottom-huge {
 
 .m-container {
     max-width: 72em !important;
+    margin: auto !important;
+}
+
+.m-container-small {
+    max-width: 60em !important;
     margin: auto !important;
 }
 
