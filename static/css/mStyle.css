@@ -137,6 +137,13 @@ body {
     margin: auto !important;
 }
 
+/* -- shadow -- */
+
+.m-shadow-small {
+    -webkit-box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
+}
+
 /* -- color --*/
 
 .m-black {
@@ -160,5 +167,11 @@ body {
     }
     .m-mobile-wide {
         width: 100% !important;
+    }
+
+    .m-mobile-lr-clear {
+        padding-right: 0em !important;
+        padding-left: 0em !important;
+
     }
 }
