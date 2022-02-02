@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'polls',
 ]
 
 MIDDLEWARE = [
@@ -50,6 +51,14 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'HouDuan.urls'
+
+
+STATICFILES_DIRS = (
+
+        os.path.join(BASE_DIR, 'static'),
+
+)
+STATIC_URL = '/static/'
 
 TEMPLATES = [
     {

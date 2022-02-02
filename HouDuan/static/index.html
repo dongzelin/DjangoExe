@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>阿林｜个人博客</title>
+    <title>阿林 | 董泽林的个人网站</title>
     <!-- 首页 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
-    <link rel="stylesheet" href="../../static/css/mStyle.css">
+    <link rel="stylesheet" href="css/mStyle.css">
 </head>
 <body>
 
@@ -15,12 +15,11 @@
         <div class="ui container">
             <div class="ui inverted secondary stackable menu">
                 <h2 class="ui teal header item">阿林</h2>
-                <a href="http://127.0.0.1:8000/polls/fontpage" class="active m-item item m-mobile-hide"><i class="mini home icon"></i>首页</a>
-                <a href="http://127.0.0.1:8000/polls/types   " class="m-item item m-mobile-hide"><i class="mini idea icon"></i>分类</a>
-                <a href="http://127.0.0.1:8000/polls/tags    " class="m-item item m-mobile-hide"><i class="mini tags icon"></i>标签</a>
-                <a href="http://127.0.0.1:8000/polls/archives" class="m-item item m-mobile-hide"><i class="mini tags icon"></i>归档</a>
-                <a href="http://127.0.0.1:8000/polls/about   " class="m-item item m-mobile-hide"><i class="mini info icon"></i>关于我</a>
-<!--                <a href="" class="m-item item m-mobile-hide"><i class="mini tags icon"></i>发布</a>-->
+                <a href="#" class="active m-item item m-mobile-hide"><i class="mini home icon"></i>首页</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="mini idea icon"></i>分类</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="mini tags icon"></i>标签</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="mini tags icon"></i>归档</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="mini info icon"></i>关于我</a>
                 <div class="right m-item item m-mobile-hide">
                     <div class="ui icon inverted transparent input">
                         <input type="text" placeholder="搜索你感兴趣的内容...">
@@ -53,23 +52,21 @@
                     </div>
                     <!-- 中间内容 -->
                     <div class="ui attached segment">
-                        {% for data in data %}
-                        <div class="ui padded vertical segment m-padding-tb-large" onclick="window.open('http://127.0.0.1:8000/polls/blog','_self')">
+                        <div class="ui padded vertical segment m-padding-tb-large">
                             <div class="ui mobile reversed stackable grid">
                                 <div class="eleven wide column">
-                                    <h3 class="ui header">{{data.title}}</h3>
-                                    <p class="m-text">{{data.runoob|slice:"70"}}......</p>
+                                    <h3 class="ui header">你真的理解什么是财富自由吗？</h3>
+                                    <p class="m-text">正确做好任何一件事情的前提是清晰、正确地理解目标。而事实是，我们很多人很多时候根本对目标没有一个正确的定义，甚至根本从来就没有想过，只是大家都那么做而已......</p>
                                     <div class="ui stackable grid">
                                         <div class="eleven wide column">
                                             <div class="ui mini horizontal link list">
                                                 <div class="item">
                                                     <img src="https://unsplash.it/60/60?image=652" alt="" class="ui avatar image">
-                                                    <div class="content"><a href="#" class="header">{{data.runoob_author}}</a></div>
+                                                    <div class="content"><a href="#" class="header">刘丰璨</a></div>
                                                 </div>
                                                 <div class="item">
-                                                    <i class="calendar icon"></i>{{data.submission_date}}
+                                                    <i class="calendar icon"></i>2018-07-19
                                                 </div>
-
                                                 <div class="item">
                                                     <i class="eye icon"></i>234
                                                 </div>
@@ -78,10 +75,8 @@
                                         <div class="five wide right aligned column">
                                             <a href="#" target="_blank" class="ui teal basic label m-padding-tiny m-text-thin">认知升级</a>
                                         </div>
-
                                     </div>
                                 </div>
-
                                 <div class="five wide column">
                                     <a href="#" target="_blank">
                                         <img src="https://unsplash.it/800/450?image=652" alt="" class="ui rounded image">
@@ -89,7 +84,6 @@
                                 </div>
                             </div>
                         </div>
-                        {% endfor %}
                         <div class="ui padded vertical segment m-padding-tb-large">
                             <div class="ui mobile reversed stackable grid">
                                 <div class="eleven wide column">
@@ -337,7 +331,7 @@
                                     <i class="idea icon"></i> 分类
                                 </div>
                                 <div class="right aligned column">
-                                    <a href="http://127.0.0.1:8000/polls/types" target="_blank">more <i class="angle double right icon"></i></a>
+                                    <a href="#" target="_blank">more <i class="angle double right icon"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -360,18 +354,18 @@
                                     <i class="tags icon"></i> 标签
                                 </div>
                                 <div class="right aligned column">
-                                    <a href="http://127.0.0.1:8000/polls/tags" target="_blank">more <i class="angle double right icon"></i></a>
+                                    <a href="#" target="_blank">more <i class="angle double right icon"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="ui teal segment">
                             <a href="#" target="_blank" class="ui teal basic label m-margin-tb-tiny">方法论<div class="detail">23</div></a>
-                            <a href="#" target="_blank" class="ui teal basic label m-margin-tb-tiny">Java学习路线<div class="detail">23</div></a>
-                            <a href="#" target="_blank" class="ui teal basic label m-margin-tb-tiny">python学习路线<div class="detail">23</div></a>
-                            <a href="#" target="_blank" class="ui teal basic label m-margin-tb-tiny">Go学习路线<div class="detail">23</div></a>
-                            <a href="#" target="_blank" class="ui teal basic label m-margin-tb-tiny">PHP学习路线<div class="detail">23</div></a>
-                            <a href="#" target="_blank" class="ui teal basic label m-margin-tb-tiny">C++学习路线<div class="detail">23</div></a>
-                            <a href="#" target="_blank" class="ui teal basic label m-margin-tb-tiny">Mysql学习路线<div class="detail">23</div></a>
+                            <a href="#" target="_blank" class="ui teal basic label m-margin-tb-tiny">方法论<div class="detail">23</div></a>
+                            <a href="#" target="_blank" class="ui teal basic label m-margin-tb-tiny">方法论<div class="detail">23</div></a>
+                            <a href="#" target="_blank" class="ui teal basic label m-margin-tb-tiny">方法论<div class="detail">23</div></a>
+                            <a href="#" target="_blank" class="ui teal basic label m-margin-tb-tiny">方法论<div class="detail">23</div></a>
+                            <a href="#" target="_blank" class="ui teal basic label m-margin-tb-tiny">方法论<div class="detail">23</div></a>
+                            <a href="#" target="_blank" class="ui teal basic label m-margin-tb-tiny">方法论<div class="detail">23</div></a>
                         </div>
                     </div>
                     <!-- 最新推荐 -->
@@ -395,7 +389,7 @@
                     <!-- 二维码 -->
                     <h4 class="ui horizontal divider header">微信名片</h4>
                     <div class="ui centered card" style="width:11em">
-                        <img src="../../static/img/wechat.jpg" alt="微信名片" class="ui rounded image">
+                        <img src="img/wechat.jpg" alt="微信名片" class="ui rounded image">
                     </div>
                 </div>
             </div>
@@ -412,7 +406,7 @@
                 <div class="three wide column">
                     <div class="ui inverted link list">
                         <div class="item">
-                            <img src="../../static/img/wechat.jpg" class="ui rounded image" alt="微信名片" style="width:110px">
+                            <img src="img/wechat.jpg" class="ui rounded image" alt="微信名片" style="width:110px">
                         </div>
                     </div>
                 </div>
