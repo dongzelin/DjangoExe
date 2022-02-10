@@ -1,7 +1,6 @@
 from django.db import models
 
 
-# Create your models here.
 class Blog(models.Model):
     id = models.AutoField(primary_key = True)   # 文章id
     title = models.CharField(max_length=60) # 标题
