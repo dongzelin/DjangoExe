@@ -14,7 +14,7 @@
         <div class="ui container">
             <div class="ui inverted secondary stackable menu">
                 <h2 class="ui teal header item">璨然</h2>
-                <a href="http://127.0.0.1:8000/polls/fontpage" class="m-item item m-mobile-hide"><i class="mini home icon"></i>首页</a>
+                <a href="http://127.0.0.1:8000/polls/fontpage?page=1" class="m-item item m-mobile-hide"><i class="mini home icon"></i>首页</a>
                 <a href="http://127.0.0.1:8000/polls/types   " class="m-item item m-mobile-hide"><i class="mini idea icon"></i>分类</a>
                 <a href="http://127.0.0.1:8000/polls/tags    " class="m-item item m-mobile-hide"><i class="mini tags icon"></i>标签</a>
                 <a href="http://127.0.0.1:8000/polls/archives" class="m-item item m-mobile-hide"><i class="mini tags icon"></i>归档</a>
@@ -27,29 +27,25 @@
                 </div>
             </div>
         </div>
-        <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+        <a href="https://www.baidu.com" class="ui menu toggle black icon button m-right-top m-mobile-show">
             <i class="sidebar icon"></i>
         </a>
     </nav>
 
     <!-- 中间内容 -->
     <div class="m-padding-tb-large m-container-small">
-        {% for data in data %}
         <div class="ui container">
-
             <div class="ui top attached segment">
-
                 <div class="ui horizontal link list">
                     <div class="item">
                         <img src="https://unsplash.it/100/100?image=1005" alt="用户头像" class="ui avatar image">
-
                         <div class="content"><a href="#" class="header">{{data.runoob_author}}</a></div>
                     </div>
                     <div class="class item">
                         <i class="calendar icon"></i> {{data.submission_date}}
                     </div>
                     <div class="item">
-                        <i class="eye icon"></i> 2342
+                        <i class="eye icon"></i> 2435
                     </div>
                 </div>
             </div>
@@ -57,7 +53,6 @@
                 <!-- 图片区域 -->
                 <img src="https://unsplash.it/800/450?image=1005" alt="博客图片" class="ui rounded fluid image">
             </div>
-
             <div class="ui attached segment padded">
                 <!-- 内容 -->
                 <div class="ui right aligned basic segment">
@@ -197,11 +192,8 @@
             </div>
         </div>
     </div>
-    {% endfor %}
-
     <br />
     <br />
-
     <!-- 底部footer -->
     <footer class="ui inverted vertical segment m-padding-tb-massive">
         <div class="ui center aligned container">
